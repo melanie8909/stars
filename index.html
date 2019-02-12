@@ -51,29 +51,30 @@
 		}
 		.section{
 			outline: 1px solid red;
-			background-color: #fff;
+			background-color: #ffffff;
 		}
 		.section-kv{
 			margin-top: 60px;
 			width: 100%;
-			height: 0;
-			padding-bottom: 39.5833%;
-			background: url(img/KV_Bgimage-lg.jpg) top center / 100% auto no-repeat;
+			height: 760px;
+			/*height: 0;
+			padding-bottom: 39.5833%;*/
+			background: url(img/KV_Bgimage-lg.jpg) center center / 1920px auto no-repeat;
 			position: relative;
 			z-index: -2;
 		}
 		.section-kv .container{
-			position: absolute;
-			top:0;
+			position: fixed;
+			width: 100%;
+			max-width: 1200px;
+			height: 760px;
+			/*height: 0;
+			padding-bottom: 39.5833%;*/
+			top: 60px;
 			right: 0;
-			bottom: 0;
 			left: 0;
-			margin: auto;
-			outline: 1px solid red;
 		}
 		.section-kv h1{
-			position: fixed;
-			top: 0;
 			font-size: 0;
 			width: 100%;
 			max-width: 1200px;
@@ -87,24 +88,70 @@
 			height: 0;
 			padding-bottom: 25.8333%;
 
-			position: fixed;
+			position: absolute;
+			bottom: 20%;
+			left: 0;
 			z-index: -1;
+		}
+		.section-kv .item:nth-of-type(2){
+			left: 19%;
+			bottom: 8%;
+		}
+		.section-kv .item:nth-of-type(3){
+			left: auto;
+			right: 19%;
+			bottom: 8%;
+		}
+		.section-kv .item:nth-of-type(4){
+			left: auto;
+			right: 0;
 		}
 		.section-kv .item img{
 			width: 100%;
+			margin: auto;
 		}
 		.section-kv::after{
 			content: '';
 			display: block;
 			width: 100%;
-			height: 0;
-			padding-bottom: 39.5833%;
+			height: 760px;
+			/*height: 0;
+			padding-bottom: 39.5833%;*/
 			position: absolute;
 			right: 0;
 			bottom: 0;
 			left: 0;
 			margin: auto;
-			background: url(img/KV_RocketCloud-lg.png) center center / 100% auto no-repeat;
+			background: url(img/KV_RocketCloud-lg.png) center center / 1920px auto no-repeat;
+		}
+		.section-desc{
+			padding-bottom: 30px;
+		}
+		.section-desc .container{
+			display: flex;
+			flex-flow: row wrap;
+		}
+		.section-desc h2{
+			font-size: 0;
+			width: 100%;
+			height: 120px;
+			margin: auto;
+			background: url(img/Description_Title.png) center center / auto 100% no-repeat;
+		}
+		.section-desc p{
+			width: 100%;
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		.section-desc p.notice{
+			font-size: .7em;
+		}
+		.section-desc .item{
+			width: 50%;
+		}
+		.section-desc img{
+			width: 100%;
+			vertical-align: middle;
 		}
 	</style>
 </head>
@@ -121,21 +168,21 @@
 	</header>
 	<section class="section section-kv">
 		<div class="container">
-			<div class="kv-pd">
-				<h1>切版挑戰<span>切版任務等你闖關，完成任務越多等級越高！Amos加持：一路平安狼牙棒、醒腦磚頭、出其不意鯊魚頭、寫扣專用飲料杯，等你來拿</span></h1>
-				<div class="item"><img src="img/KV_GiftCoco.png" alt="內容"></div>
-				<div class="item"><img src="img/KV_GiftCoco.png" alt="內容"></div>
-				<div class="item"><img src="img/KV_GiftCoco.png" alt="內容"></div>
-				<div class="item"><img src="img/KV_GiftCoco.png" alt="內容"></div>
-			</div>
+			<h1>切版挑戰<span>切版任務等你闖關，完成任務越多等級越高！Amos加持：一路平安狼牙棒、醒腦磚頭、出其不意鯊魚頭、寫扣專用飲料杯，等你來拿</span></h1>
+			<div class="item"><img src="img/KV_GiftStick.png" alt="內容"></div>
+			<div class="item"><img src="img/KV_GiftBrick.png" alt="內容"></div>
+			<div class="item"><img src="img/KV_GiftShark.png" alt="內容"></div>
+			<div class="item"><img src="img/KV_GiftCoco.png" alt="內容"></div>
 		</div>
 	</section>
 
 	<section class="section section-desc">
 		<div class="container">
-			<h2>闖關公告<span>即日起~108/01/31，Amos暴力切版入門班全體同學皆可參加</span></h2>
-			<div class="item"><img src="https://api.fnkr.net/testimg/600x260/00CED1/FFF/?text=img+placeholder" alt="內容"></div>
-			<div class="item"><img src="https://api.fnkr.net/testimg/600x260/00CED1/FFF/?text=img+placeholder" alt="內容"></div>
+			<h2>闖關公告</h2>
+			<p>即日起~108/01/31，Amos暴力切版入門班全體同學皆可參加</p>
+			<div class="item"><img src="img/Description_Star.png" alt="內容"></div>
+			<div class="item"><img src="img/Description_BigStar.png" alt="內容"></div>
+			<p class="notice">* 貼心提醒：此為切版練習作業，不可以當作品展示</p>
 		</div>
 	</section>
 
