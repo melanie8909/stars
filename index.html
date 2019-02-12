@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">	
+	<meta charset="UTF-8">
+	<title>星星年版</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		.container{
+			width: 100%;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+		.header{
+			background-color: #f36518;
+			color: #ffffff;
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+		}
+		.header .container{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.header a{
+			color: #ffffff;
+		}
+		.header .logo{
+			font-size: 0;
+			width: 300px;
+			height: 60px;
+			display: block;
+			background: url(img/Header_Logo.png) center center / 100% 100%;
+		}
+		.navbar a{
+			display: inline-block;
+			padding: 8px 20px;
+		}
+		.navbar a:hover{
+			background-color: #ffffff;
+			border-radius: 1000px;
+			color: #f36518;
+		}
+		.section{
+			outline: 1px solid red;
+			background-color: #fff;
+		}
+		.section-kv{
+			margin-top: 60px;
+			width: 100%;
+			height: 0;
+			padding-bottom: 39.5833%;
+			background: url(img/KV_Bgimage-lg.jpg) top center / 100% auto no-repeat;
+			position: relative;
+			z-index: -2;
+		}
+		.section-kv .container{
+			position: absolute;
+			top:0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			outline: 1px solid red;
+		}
+		.section-kv h1{
+			position: fixed;
+			top: 0;
+			font-size: 0;
+			width: 100%;
+			max-width: 1200px;
+			height: 0;
+			padding-bottom: 23.3333%;
+			background: url(img/KV_Title-lg.png) center center / 100% auto no-repeat;
+		}
+		.section-kv .item{
+			font-size: 0;
+			width: 25.8333%;
+			height: 0;
+			padding-bottom: 25.8333%;
+
+			position: fixed;
+			z-index: -1;
+		}
+		.section-kv .item img{
+			width: 100%;
+		}
+		.section-kv::after{
+			content: '';
+			display: block;
+			width: 100%;
+			height: 0;
+			padding-bottom: 39.5833%;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			background: url(img/KV_RocketCloud-lg.png) center center / 100% auto no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<a href="##" class="logo">AMOS CSS COKE</a>
+			<nav class="navbar">
+				<a href="##">闖關公告</a>
+				<a href="##">任務佈告欄</a>
+				<a href="##">注意事項</a>
+			</nav>
+		</div>
+	</header>
+	<section class="section section-kv">
+		<div class="container">
+			<div class="kv-pd">
+				<h1>切版挑戰<span>切版任務等你闖關，完成任務越多等級越高！Amos加持：一路平安狼牙棒、醒腦磚頭、出其不意鯊魚頭、寫扣專用飲料杯，等你來拿</span></h1>
+				<div class="item"><img src="img/KV_GiftCoco.png" alt="內容"></div>
+				<div class="item"><img src="img/KV_GiftCoco.png" alt="內容"></div>
+				<div class="item"><img src="img/KV_GiftCoco.png" alt="內容"></div>
+				<div class="item"><img src="img/KV_GiftCoco.png" alt="內容"></div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section section-desc">
+		<div class="container">
+			<h2>闖關公告<span>即日起~108/01/31，Amos暴力切版入門班全體同學皆可參加</span></h2>
+			<div class="item"><img src="https://api.fnkr.net/testimg/600x260/00CED1/FFF/?text=img+placeholder" alt="內容"></div>
+			<div class="item"><img src="https://api.fnkr.net/testimg/600x260/00CED1/FFF/?text=img+placeholder" alt="內容"></div>
+		</div>
+	</section>
+
+	<section class="section section-mission">
+		<div class="container">
+			<h2>任務佈告欄<span>快踏上星際旅程，完成七星任務</span></h2>
+			<div class="item"><img src="https://api.fnkr.net/testimg/425x425/00CED1/FFF/?text=1" alt="內容"></div>
+			<div class="item"><img src="https://api.fnkr.net/testimg/425x425/00CED1/FFF/?text=2" alt="內容"></div>
+			<div class="item"><img src="https://api.fnkr.net/testimg/370x370/00CED1/FFF/?text=3" alt="內容"></div>
+			<div class="item"><img src="https://api.fnkr.net/testimg/370x370/00CED1/FFF/?text=4" alt="內容"></div>
+			<div class="item"><img src="https://api.fnkr.net/testimg/370x370/00CED1/FFF/?text=5" alt="內容"></div>
+			<div class="item"><img src="https://api.fnkr.net/testimg/425x425/00CED1/FFF/?text=6" alt="內容"></div>
+			<div class="item"><img src="https://api.fnkr.net/testimg/500x500/00CED1/FFF/?text=7" alt="內容"></div>
+			<a href="##" class="btn">活動注意事項</a>
+		</div>
+	</section>
+	<footer class="footer">
+		<p class="slogan">金魚切版 基礎先跟上</p>
+		<p class="notice">請記住「要求自己」是基本條件<br>本版只供Amos課程學員進行切版練習用，不可轉作他用</p>
+		<a href="tel:0800945945">暴力服務專線：0800-945-945</a>
+	</footer>
+</body>
+</html>
