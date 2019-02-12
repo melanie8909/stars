@@ -8,6 +8,7 @@
 		*{
 			margin: 0;
 			padding: 0;
+			font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
 		}
 		a{
 			text-decoration: none;
@@ -279,8 +280,8 @@
 		<div class="container">
 			<a href="##" class="logo">AMOS CSS COKE</a>
 			<nav class="navbar">
-				<a href="##">闖關公告</a>
-				<a href="##">任務佈告欄</a>
+				<a href="#sectionDesc">闖關公告</a>
+				<a href="#sectionMission">任務佈告欄</a>
 				<a href="##">注意事項</a>
 			</nav>
 		</div>
@@ -295,7 +296,7 @@
 		</div>
 	</section>
 
-	<section class="section section-desc">
+	<section id="sectionDesc" class="section section-desc">
 		<div class="container">
 			<h2>闖關公告</h2>
 			<p>即日起~108/01/31，Amos暴力切版入門班全體同學皆可參加</p>
@@ -305,7 +306,7 @@
 		</div>
 	</section>
 
-	<section class="section section-mission">
+	<section id="sectionMission" class="section section-mission">
 			<div class="mission-head">
 				<h2>任務佈告欄<span>快踏上星際旅程，完成七星任務</span></h2>
 			</div>
@@ -331,5 +332,21 @@
 			<a href="tel:0800945945">暴力服務專線：0800-945-945</a>
 		</div>
 	</footer>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		  
+		  var scrollLink = $('.navbar a');
+		  
+		  // Smooth scrolling
+		  scrollLink.click(function(e) {
+		    e.preventDefault();
+		    $('body,html').animate({
+		      scrollTop: $(this.hash).offset().top
+		    }, 1000 );
+		  });
+		  
+		})
+	</script>
 </body>
 </html>
