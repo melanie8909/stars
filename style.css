@@ -44,7 +44,7 @@ a{
 	border-radius: 1000px;
 	color: #f36518;
 }
-@media screen and (max-width:1199px){
+@media screen and (max-width:767px){
 	.header .container{
 		display: flex;
 		flex-flow: row wrap;
@@ -163,7 +163,7 @@ a{
 	width: 100%;
 	margin: auto;
 }
-@media screen and (max-width:1199px){
+@media screen and (max-width:767px){
 	.section-kv{
 		margin-top: 60px;
 		width: 100%;
@@ -279,7 +279,7 @@ a{
 	width: 100%;
 	vertical-align: middle;
 }
-@media screen and (max-width:1199px){
+@media screen and (max-width:767px){
 	.section-desc{
 		background-color: #ffffff;
 	}
@@ -387,7 +387,7 @@ a{
 	font-size: 0;
 	opacity: .7;
 }
-@media screen and (max-width:1199px){
+@media screen and (max-width:767px){
 	.section-mission .mission-head{
 		position: relative;
 		height: 0;
@@ -471,7 +471,7 @@ a{
 	border-top: 1px solid #ffffff;
 	text-align: center;
 }
-@media screen and (max-width:1199px){
+@media screen and (max-width:767px){
 	.footer{
 		height: auto;
 		color: #DEDEDE;
