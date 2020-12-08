@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<title>TOYOTA</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			font-family: sans-serif;
+		}
+		.wrap{
+			width: 960px;
+			margin: auto;
+		}
+		.item{
+			display: flex;
+			flex-wrap: wrap;
+			position: relative;
+		}
+		.item + .item{
+			margin-top: 50px;
+		}
+		.pic{
+			width: 695px;
+			height: 430px;
+			position: relative;
+			margin-top: 138px;
+			margin-left: 190px;
+		}
+		.item-r .pic{
+			margin-left: 0;
+		}
+		.pic img{
+			width: 100%;
+			vertical-align: top;
+		}
+		.pic .icon-play{
+			display: block;
+			width: 57px;
+			height: 36px;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: -10px;
+			margin: auto;
+		}
+		.item-r .pic .icon-play{
+			right: unset;
+			left: -10px;
+		}
+		.pic::before{
+			content: '';
+			background-color: #eee;
+			width: 440px;
+			height: 290px;
+			position: absolute;
+			z-index: -1;
+			top: -100px;
+			right: -78px;
+		}
+		.box-t{
+			background:
+	          repeating-linear-gradient(90deg, transparent, transparent 1px, #000 1px, #000 15px),
+	          repeating-linear-gradient( 0deg, transparent, transparent 1px, #000 1px, #000 15px),
+	          #555;
+			color: #fff;
+			width: 355px;
+			height: 388px;
+			margin-top: -568px;
+			position: relative;
+		}
+		.item-r .box-t{
+			margin-left: auto;
+		}
+		.box-t h3{
+			background-color: #b00;
+			height: 138px;
+			font-size: 48px;
+			line-height: 138px;
+			font-weight: lighter;
+			overflow: hidden;
+			padding: 0 10px;
+			box-sizing: border-box;
+		}
+		.box-t h3 span{
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 120px;
+		    transform: rotate(90deg) translate(-5px, 25px);
+		    letter-spacing: -10px;
+
+		}
+		.item-r .box-t h3{
+			text-align: right;
+		}
+		.item-r .box-t h3 span{
+		    float: right;
+		    transform: rotate(90deg) translate(-5px, -25px);
+		}
+		.box-t h4{
+			padding: 0 20px;
+			margin-top: 30px;
+			font-size: 26px;
+			font-weight: normal;
+		}
+		.box-t p{
+			padding: 0 20px;
+			margin-top: 10px;
+			box-sizing: border-box;
+			font-size: 20px;
+			line-height: 1.5;
+			font-weight: lighter;
+			letter-spacing: 1px;
+		}
+		.box-b{
+			background-color: #eee;
+			width: 682px;
+			margin-top: -30px;
+			margin-left: 50px;
+			position: relative;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+		.item-r .box-b{
+			margin-left: auto;
+		}
+		.box-b .title{
+			color: #b00;
+			font-weight: bold;
+		}
+		.box-b .title::after{
+			content: '';
+			display: block;
+			width: 470px;
+			height: 1px;
+			background-color: #b00;
+			position: relative;
+			top: -10px;
+			right: -170px;
+		}
+		.box-b dl{
+			margin-top: 5px;
+		}
+		.box-b dl dt{
+			background-color: #000;
+			color: #fff;
+			display: inline-block;
+			padding: 2px 6px;
+			margin-top: 5px;
+		}
+		.box-b dl dd{
+			margin-top: 5px;
+			margin-left: 1em;
+			color: #666;
+			font-weight: normal;
+			text-indent: -1em;
+		}
+		.box-b dl dd::before{
+			content: '・';
+			color: #b00;
+			font-weight: bolder;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="item item-l" >
+			<a href="#" class="pic" data-aos="fade-left" data-aos-duration="2000">
+				<img src="https://www.toyota.com.tw/asset/img/tech_tnga/advantage-1-video-button-bg.png?9e068d9b">
+				<img class="icon-play" src="https://www.toyota.com.tw/asset/img/tech_tnga/video-icon.png?73425069">
+			</a>
+			<div class="box-t" data-aos="fade-right" data-aos-duration="3000">
+				<h3><span>01</span>操控樂趣</h3>
+				<h4>人人滿意的駕駛體驗</h4>
+				<p>透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩，帶給駕駛更靈敏的道路反饋，享受隨心馳騁的行駛快感。</p>
+			</div>
+			<div class="box-b" data-aos="fade-left" data-aos-duration="1000">
+				<p class="title">因為我們做了這些革新</p>
+				<dl>
+					<dt>低重心設計</dt>
+					<dd>透過低重心新設計，不僅呈現更低伏的外觀，夠能減少車身前傾，保持高速行駛穩定性。</dd>
+					<dt>車體剛性強化</dt>
+					<dd>車身結構採用超高強度鋼材，提高車輛穩定性，同時藉由雷射強化焊接技術，大幅增加焊點數量，提升車身抗扭剛性，強化駕馭穩定性及安全性。</dd>
+					<dt>四輪獨立懸吊</dt>
+					<dd>搭載全新四輪獨立懸吊設定，透過懸吊的高乘載強度，保持輪胎抓地力，同時兼顧轉向靈敏度與清晰路感回饋，提升駕馭樂趣。</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="item item-r">
+			<a href="#" class="pic" data-aos="fade-right" data-aos-duration="3000">
+				<img src="https://www.toyota.com.tw/asset/img/tech_tnga/advantage-2-video-button-bg.png?af18d668">
+				<img class="icon-play" src="https://www.toyota.com.tw/asset/img/tech_tnga/video-icon.png?73425069">
+			</a>
+			<div class="box-t" data-aos="fade-left" data-aos-duration="1000">
+				<h3><span>02</span>安全守護</h3>
+				<h4>行車更安心的高剛性車體</h4>
+				<p>您的愛車會妥善保護您，強悍穩固的車身可使您安全無虞。世界級的安全功能讓您輕鬆自如如享受旅程、毫無後顧之憂。</p>
+			</div>
+			<div class="box-b" data-aos="fade-left" data-aos-duration="1500">
+				<p class="title">因為我們做了這些革新</p>
+				<dl>
+					<dt>主動安全</dt>
+					<dd>以先進的TSS系統，主動偵測路況，輔助駕駛判斷路況並維持行車安全。</dd>
+					<dt>被動安全</dt>
+					<dd>堅固的高剛性車體，使用熱沖壓材料的高強度抗紐鋼板，強化座艙對意外事故的保護力。</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="item item-l">
+			<a href="#" class="pic" data-aos="fade-left" data-aos-duration="3000">
+				<img src="https://www.toyota.com.tw/asset/img/tech_tnga/advantage-3-video-button-bg.png?705545c7">
+				<img class="icon-play" src="https://www.toyota.com.tw/asset/img/tech_tnga/video-icon.png?73425069">
+			</a>
+			<div class="box-t" data-aos="fade-right" data-aos-duration="2000">
+				<h3><span>03</span>乘坐舒適</h3>
+				<h4>令人放鬆舒適的車室空間</h4>
+				<p>車室空間設計著人體工學，透過方向盤、踏板等位置優化，追求更舒適的駕駛位置，並以新型座椅設計，提高座椅包覆性，致力實現長途駕駛不疲勞的舒適駕馭體驗。</p>
+			</div>
+			<div class="box-b" data-aos="fade-right" data-aos-duration="1000">
+				<p class="title">因為我們做了這些革新</p>
+				<dl>
+					<dt>駕駛位置最佳化</dt>
+					<dd>針對駕駛位置進行徹底的修改，讓駕駛者可如同握手般自然且舒適地操控方向盤。</dd>
+					<dt>駕馭視野佳</dt>
+					<dd>考量駕駛坐進車內的高度，透過前擋風玻璃位置的調整，達到盲區極小化，使駕駛視更開闊，同步提升駕馭安全。</dd>
+					<dt>更寧靜的車室</dt>
+					<dd>採用最新三層結構的隔音材料，與引擎、變速箱的零件改革，將座艙的震動抑制在最小限度，提供乘客舒適安靜的感受。</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="item item-r">
+			<a href="#" class="pic" data-aos="fade-right" data-aos-duration="3000">
+				<img src="https://www.toyota.com.tw/asset/img/tech_tnga/advantage-4-video-button-bg.png?24515544">
+				<img class="icon-play" src="https://www.toyota.com.tw/asset/img/tech_tnga/video-icon.png?73425069">
+			</a>
+			<div class="box-t" data-aos="fade-left" data-aos-duration="1000">
+				<h3><span>04</span>以人為本</h3>
+				<h4>使用者導向的貼心設計</h4>
+				<p>藉由高度人性化的介面整合、傳遞車輛資訊，豐富日常駕駛體驗。從提升油耗表現到行李廂空間最適化，均細心考量，更貼近使用者真正所需與習慣，並給予即時回應。</p>
+			</div>
+			<div class="box-b" data-aos="fade-left" data-aos-duration="1500">
+				<p class="title">因為我們做了這些革新</p>
+				<dl>
+					<dt>優質油耗表現</dt>
+					<dd>以 AURIS 為例，更強勁的高效引擎將熱效率提升至40%，達到世界級水準，屢屢突破燃油效率新境界。</dd>
+					<dt>行李廂空間最適化</dt>
+					<dd>以AURIS為例，透過將電池位置移到後座下方，讓行李廂擁有更大的空間。</dd>
+				</dl>
+			</div>
+		</div>
+		<div class="item item-l">
+			<a href="#" class="pic" data-aos="fade-left" data-aos-duration="3000">
+				<img src="https://www.toyota.com.tw/asset/img/tech_tnga/advantage-5-video-button-bg.png?ad476b92">
+				<img class="icon-play" src="https://www.toyota.com.tw/asset/img/tech_tnga/video-icon.png?73425069">
+			</a>
+			<div class="box-t" data-aos="fade-right" data-aos-duration="2000">
+				<h3><span>05</span>引以為傲</h3>
+				<h4>極具吸引力的精心設計</h4>
+				<p>TNGA車款擁有讓人忍不住回頭的新潮外觀、讓駕駛充滿自信的駕馭快感！不僅讓車主展現個人風格，也能讓擁有者都能引以為傲。</p>
+			</div>
+			<div class="box-b" data-aos="fade-right" data-aos-duration="1000">
+				<p class="title">因為我們做了這些革新</p>
+				<dl>
+					<dt>設計概念</dt>
+					<dd>TNGA 低重心設計，不僅呈現更低伏的運動化外觀，更講究高品質內裝的一致性。</dd>
+					<dt>環保概念</dt>
+					<dd> 為了對環境保護盡一份心力，我們全面提升傳統引擎、變速箱與油電複合動力的效能。</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+	<script>
+		AOS.init();
+	</script>
+</body>
+</html>
