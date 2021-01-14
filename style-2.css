@@ -1,0 +1,546 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+img{
+	vertical-align: middle;
+}
+.sr-only{
+	display: block;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
+.btn{
+	display: block;
+	width: 100%;
+	margin: auto;
+}
+.btn img{
+	width: 100%;
+}
+.container{
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
+@media screen and (min-width:768px){
+	.btn{
+		width: 50%;
+	}
+}
+
+
+
+/* -- Header -------------------------------------------------------------------------- */
+
+.header{
+	background-color: #f36518;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+.logo{
+	height: 60px;
+	margin: 0 auto;
+}
+.logo img{
+	height: 100%;
+}
+.nav{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+}
+.nav a{
+	width: 33.333333%;
+	height: 0;
+	padding-bottom: 14.666666%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	font-size: 0;
+	background-color: #029d90;
+}
+.nav a + a{
+	border-left: 1px solid #fff;
+}
+.nav a:hover{
+	background-color: #FF5E79;
+}
+.nav a:nth-child(1){
+	background-image: url(img/star/Fixed_Button_Description.png);
+}
+.nav a:nth-child(2){
+	background-image: url(img/star/Fixed_Button_Mission.png);
+}
+.nav a:nth-child(3){
+	background-image: url(img/star/Fixed_Button_Notes.png);
+}
+@media screen and (min-width:768px){
+	.logo{
+		margin: 0;
+	}
+	.nav{
+		position: inherit;
+		width: auto;
+		margin-left: auto;
+		background: transparent;
+	}
+	.nav a,
+	.nav a:nth-child(1),
+	.nav a:nth-child(2),
+	.nav a:nth-child(3){
+		width: auto;
+		height: auto;
+		font-size: 16px;
+		background-image: none;
+		background-color: transparent;
+		color:#ffffff;
+		padding: 6px 20px;
+		transition: .3s;
+	}
+	.nav a + a {
+		margin-left: 10px;
+		border-left: none;
+	}
+	.nav a:hover{
+		background-color: #ffffff;
+		color: #f36518;
+		border-radius: 100px;
+	}
+}
+
+/* -- KV -------------------------------------------------------------------------- */
+
+/* 星球光芒＋星星背景 */
+.section-kv{
+	margin-top: 60px;
+	background: url(img/star/KV_Bgimage-xs.png),
+				url(img/star/Body_BgPoint_repeat.png);
+	background-size: cover,
+					 50%;
+	background-position: center center,
+						 center center;
+	background-repeat: no-repeat,
+					   repeat;
+	background-color: #5845A1;
+	background-attachment: fixed;
+	position: relative;
+}
+
+/* 彩色雲 */
+.section-kv::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 280px;
+	background-image: url(img/star/KV_RocketCloud_repeat.png);
+	background-size: 1000px 280px;
+	background-repeat: repeat-x;
+	background-position: center bottom;
+}
+
+/* 白色雲 */
+.section-kv::after{
+	content: '';
+	display: block;
+	background-image: url(img/star/KV_RocketCloudWhite_repeat.png);
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	bottom: 0;
+	background-repeat: repeat-x;
+	background-position: center bottom;
+	background-size: contain;
+}
+.section-kv .container{
+	position: relative;
+}
+
+/* 撐高度用 h1120:w750 */
+.section-kv .container::before{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 0;
+	padding-bottom: 149.333333%;
+	/*background-color: #ccc;*/
+}
+
+/* 火箭 */
+.section-kv .container::after{
+	content: '';
+	background-image: url(img/star/KV_Rocket.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 16.666666%;
+	height: 0;
+	padding-bottom: 34.999999%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+/* 固定內容物的群組 */
+.section-kv .fixed-group{
+	display: flex;
+	flex-wrap: wrap;
+	position: fixed;
+	top: 60px;
+}
+.fixed-group h1{
+	width: 100%;
+	height: 0;
+	padding-bottom: 54.79452%;
+	background-image: url(img/star/KV_Title-xs.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.fixed-group .item-group{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.fixed-group .item-group .item{
+	width: 40%;
+}
+.fixed-group .item-group .item:nth-child(2),
+.fixed-group .item-group .item:nth-child(3){
+	width: 50%;
+	order: 1;
+	transform: translate(0%,-15%); 
+}
+.fixed-group .item-group .item img{
+	width: 100%;
+}
+
+@media screen and (min-width:768px){
+	.section-kv{
+			background: url(img/star/KV_Bgimage-lg.png),
+						url(img/star/Body_BgPoint_repeat.png);
+			background-size: contain,
+							 50%;
+			background-position: center center,
+								 center center;
+			background-repeat: no-repeat,
+							   repeat;
+			background-color: #5845A1;
+			background-attachment: fixed;
+	}
+	/* 撐高度用 h760:w1200 */
+	.section-kv .container::before{
+		padding-bottom: 63.333333%;
+	}
+
+	/* 固定內容物的群組 */
+	.section-kv .fixed-group{
+		max-width: 1200px;
+	}
+	.fixed-group h1{
+		padding-bottom: 23.333333%;
+		background-image: url(img/star/KV_Title-lg.png);
+	}
+	.fixed-group .item-group .item{
+		width: 25%;
+	}
+	.fixed-group .item-group .item:nth-child(2){
+		width: 25%;
+		order: 0;
+		transform: translate(-15%,30%); 
+	}
+	.fixed-group .item-group .item:nth-child(3){
+		width: 25%;
+		order: 0;
+		transform: translate(15%,30%); 
+	}
+}
+
+
+/* -- Description -------------------------------------------------------------------------- */
+.section-description{
+	background-color: #fff;
+	position: relative;
+	z-index: 2;
+}
+.section-description .container{
+	position: relative;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.section-description .section-head{
+	width: 100%;
+}
+.section-description h2{
+	height: 0;
+	padding-bottom: 21.333333%;
+	background-image: url(img/star/Description_Title-xs.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.section-description p{
+	text-align: center;
+}
+.section-description .notice{
+	font-size: 0.8em;
+}
+.section-description .item-group{
+	display: flex;
+	flex-wrap: 	wrap;
+}
+.section-description .item{
+	width: 90%;
+	margin: 0 auto;
+}
+.section-description .item img{
+	width: 100%;
+}
+@media screen and (min-width:768px){
+	.section-description h2{
+		width: 33.333333%;
+		margin: auto;
+		padding-bottom: 10%;
+	}
+	.section-description .item{
+		width: 50%;
+	}
+}
+
+/* -- Misson -------------------------------------------------------------------------- */
+
+/* 星星背景 */
+.section-mission{
+	background: url(img/star/Body_BgPoint_repeat.png);
+	background-size: 50%;
+	background-position: center center;
+	background-repeat: 	repeat;
+	background-color: #5845A1;
+	position: relative;
+	z-index: 1;
+}
+
+/* 白色雲底部 */
+.section-mission::before{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 170px;
+	background-image: url(img/star/Mission_TopClould_repeat.png);
+	background-size: contain;
+	background-repeat: repeat-x;
+	background-position: center top;
+	z-index: 2;
+	position: absolute;
+
+}
+.section-mission .container{
+	flex-wrap: wrap;
+}
+
+/* 標題背景線 */
+.section-mission .section-head{
+    width: 100%;
+    height: 0;
+    padding-bottom: 50.666666%;
+    background-image: url(img/star/Mission_BgimageTop-xs.png);
+    background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+    position: relative;
+}
+.section-mission .section-head h2{
+	background-image: url(img/star/Mission_Title-xs.png);
+	width: 100%;
+	height: 0;
+	padding-bottom: 26.666666%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+/* 星星背景線 */
+.section-mission .section-body{
+    background-image: url(img/star/Mission_BgimageBody_repeat-xs_h2625.png);
+    width: 100%;
+    height: 0;
+    padding-bottom: 700%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+	position: relative;
+}
+.section-mission .item-group{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.section-mission .item-group .item{
+	background-image: url(img/star/Mission_Star_BgGreen-Normal.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 0;
+	padding-bottom: 100%;
+}
+.section-mission .item-group .item:hover{
+	background-image: url(img/star/Mission_Star_BgGreen-Hover.png);
+}
+.section-mission .item-group .item img{
+	width: 100%;
+}
+.section-mission .item-group .item:nth-child(7){
+	background-image: url(img/star/Mission_Star_BgPurple-Normal.png);
+}
+.section-mission .item-group .item:nth-child(7):hover{
+	background-image: url(img/star/Mission_Star_BgPurple-Hover.png);
+}
+
+@media screen and (min-width:768px){	
+	/* 星星背景 */
+	.section-mission{
+		background: url(img/star/Body_BgPoint_repeat.png);
+		background-size: 50%;
+		background-position: center center;
+		background-repeat: 	repeat;
+		background-color: #5845A1;
+	}
+	.section-mission .container{
+		flex-wrap: wrap;
+	}
+
+	/* 標題背景線 */
+	.section-mission .section-head{
+	    padding-bottom: 29.166666%;
+	    background-image: url(img/star/Mission_BgimageTop-lg.png);
+	}
+	.section-mission .section-head h2{
+		background-image: url(img/star/Mission_Title-lg.png);
+		width: 58.333333%;
+		padding-bottom: 12.499999%;
+	}
+
+	/* 星星背景線 */
+	.section-mission .section-body{
+	    background-image: url(img/star/Mission_BgimageBody-lg.png);
+	    width: 100%;
+	    padding-bottom: 125%;
+	}
+	.section-mission .item-group .item{
+		width: 35.416666%;
+		padding-bottom: 35.416666%;
+	}
+	.section-mission .item-group .item:nth-child(3),
+	.section-mission .item-group .item:nth-child(4),
+	.section-mission .item-group .item:nth-child(5){
+		width: 30.833333%;
+		padding-bottom: 30.833333%;
+	}
+	.section-mission .item-group .item:nth-child(1),
+	.section-mission .item-group .item:nth-child(5),
+	.section-mission .item-group .item:nth-child(6){
+		align-self: flex-start;
+	}
+	.section-mission .item-group .item:nth-child(4){
+		align-self: center;
+	}
+	.section-mission .item-group .item:nth-child(2),
+	.section-mission .item-group .item:nth-child(3){
+		align-self: flex-end;
+	}
+	.section-mission .item-group .item:nth-child(7){
+		width: 41.666666%;
+		padding-bottom: 41.666666%;
+	}
+}
+
+/*-- Notice -------------------------------------------------------------------------- */
+.section-notice{
+	background-image: url(img/star/Notice_Bgimage-xs.png),
+					  url(img/star/Body_BgPoint_repeat.png);
+	background-color: #5845A1;
+	width: 100%;
+	height: 0;
+	padding-bottom: 66.666666%;
+	background-repeat: no-repeat,
+					   repeat;
+	background-position: center center,
+						 center center;
+	background-size: contain,
+					 50%;
+	z-index: 1;
+	position: relative;
+}
+@media screen and (min-width:768px){
+	.section-notice{
+		background-image: url(img/star/Notice_Bgimage-lg.png),
+						  url(img/star/Body_BgPoint_repeat.png);
+		padding-bottom: 21%;
+	}
+}
+
+/*-- Footer -------------------------------------------------------------------------- */
+.footer{
+	background-color: #333;
+	color: #ffffff;
+	z-index: 1;
+	position: relative;
+	padding-bottom: 14.666666%;
+}
+.footer .container{	
+	flex-wrap: wrap;
+}
+.footer .slogan{
+	width: 100%;
+	text-align: center;
+ 	padding: 20px;
+ 	padding-bottom: 0;
+ 	font-size: 40px;
+}
+.footer .notice{
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+}
+.footer a.hotline{
+	width: 100%;
+	color: #ff0;
+	text-align: center;
+	font-size: 20px;
+	padding: 30px;
+	border-top: 1px solid #666;
+}
+@media screen and (min-width:768px){
+	.footer{
+		padding-bottom: 0;
+	}
+	.footer .slogan{
+	 	width: 50%;
+	 	text-align: left;
+	}
+	.footer .notice{
+		width: 50%;
+		text-align: left;
+	}
+}
